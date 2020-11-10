@@ -1,80 +1,210 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
 
 <head>
   <meta charset="utf-8">
-  <title>Krishu's Personal Site</title>
+  <title>TinDog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+
+
+  <script src="https://kit.fontawesome.com/ee78fc3d93.js" crossorigin="anonymous"></script>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <table cellspacing="10">
-    <tr>
-      <td><img src="Krishna.png" alt="Krishna's Picture"></td>
-      <td>
-        <h1>Krishna Patel</h1>
-        <p><em><strong>Web Developer</strong></em></p>
-        <p><em><strong><a href="https://www.algonquincollege.com/">Algonquin College</a></strong></em></p>
-        <p>I am Krishna Patel. I am currently enrolled in Computer Programmer course in Algoquin college. I am ready to To apply my software development educational skills to a co-op position that includes the designing,
-          developing, debugging and testing software. I like to turning dreams into reality by converting ideas in to code.</p>
-      </td>
-    </tr>
-  </table>
 
 
-  <hr size="3">
-  <h2>Education</h2>
-  <h3>
-    <p>Diploma in Computer Programmer | Algonquin Collage, Ottawa, ON Jan 2020 - Present</p>
-  </h3>
-  <strong>Relevant Coursework:</strong>
-  <ol>
-    <li>Introduction to Computer Programming</li>
-    <li>Introduction to Database</li>
-    <li> Operating System Fundamentals</li>
-    <li> Object-oriented programming</li>
-    <li>Computer Essential</li>
-    <li>Web Programming</li>
-  </ol>
-  <h3>
-    <p>Bachelor of Computer Engineering | Sigma Institute of Engineering, Gujarat, India Jul 2014 – Jun 2018</p>
-  </h3>
-  <strong>Relevant Coursework: </strong>
-  <ol>
-    <li>Object Oriented Programming Using JAVA/C++</li>
-    <li>Database Management System</li>
-    <li>Advance JAVA</li>
-    <li>.Net Programming</li>
-    <li>Fundamental of Software Development</li>
-    <li>Data Structure</li>
-    <li>Information and Network Security</li>
-    <li>Computer Networks</li>
-  </ol>
-  <hr size="3">
-  <h3>Hobbies</h3>
-  <ul>
-    <li>Martial arts</li>
-    <li>Motorcycling</li>
-  </ul>
-  <hr size = "3">
-  <h3>Work Experience</h3>
-  <table cellspacing= "10">
-    <thead>
-      <th>Dates</th>
-      <th>Work</th>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Sep 2018 – Oct 2019</td>
-        <td>Junior Software Developer | Softcom Technologies, Gujarat, India </td>
-      </tr>
-      <tr>
-        <td>Jun 2017 – Sep 2017</td>
-        <td>Front End Developer Co-op | Webcoin Infotech, Gujarat, India </td>
-      </tr>
-    </tbody>
-  </table>
-  <hr size = 3>
-  <h3><a href="contact-me.html">Contact Me</a></h3>
+
+  <section id="title">
+    <div class="container-fluid">
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand" href="">tingo</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#footer"> Contact </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing"> Pricing </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cta"> Downloading </a>
+            </li>
+          </ul>
+
+      </nav>
+
+
+
+      <!-- Title -->
+
+      <div class="row">
+        <div class="col-lg-6">
+          <h1><strong>Meet new and interesting dogs nearby.</strong></h1>
+          <button type="button" class="btn btn-dark btn-lg download-button"> <i class="fab fa-apple"></i> Download</button>
+          <button type="button" class="btn btn-outline-light btn-lg download-button"> <i class="fab fa-google-play"></i> Download</button>
+        </div>
+        <div class="col-lg-6">
+          <img class="title-image" src="images/iphone6.png" alt="iphone-mockup">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+
+  <section id="features">
+    <div class="row">
+      <div class="feture-box col-lg-4">
+        <i class="icon fas fa-check-circle fa-4x"></i>
+        <h3> Easy to use.</h3>
+        <p>So easy to use, even your dog could do it.</p>
+      </div>
+      <div class="feture-box col-lg-4">
+        <i class="icon fas fa-bullseye fa-4x"></i>
+        <h3>Elite Clientele</h3>
+        <p>We have all the dogs, the greatest dogs.</p>
+      </div>
+      <div class="feture-box col-lg-4">
+        <i class="icon fas fa-heart fa-4x"></i>
+        <h3>Guaranteed to work.</h3>
+        <p>Find the love of your dog's life or your money back.</p>
+
+      </div>
+    </div>
+
+  </section>
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+
+    <div id="carouselExample" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+          <img class="testinomials-image" src="images/dog-img.jpg" alt="dog-profile">
+          <em>Pebbles, New York</em>
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+          <img class="testinomials-image" src="images/lady-img.jpg" alt="lady-profile">
+          <em>Beverly, Illinois</em>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Press -->
+
+  <section id="press">
+    <img class="press-image" src="images/techcrunch.png" alt="tc-logo">
+    <img class="press-image" src="images/tnw.png" alt="tnw-logo">
+    <img class="press-image" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-image" src="images/mashable.png" alt="mashable-logo">
+
+  </section>
+
+
+  <!-- Pricing -->
+
+  <section id="pricing">
+    <h2>A Plan for Every Dog's Needs</h2>
+    <p>Simple and affordable price plans for your and your dog.</p>
+
+    <div class="row">
+
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card-header">
+          <h3>Chihuahua</h3>
+        </div>
+        <div class="card-body">
+          <h2>Free</h2>
+          <p>5 Matches Per Day</p>
+          <p>10 Messages Per Day</p>
+          <p>Unlimited App Usage</p>
+          <button type="button" class="btn btn-lg btn-block btn-outline-dark">Sign Up</button>
+        </div>
+      </div>
+      <div class="pricing-column col-lg-4 col-md-6">
+
+        <div class="card-header">
+          <h3>Labrador</h3>
+        </div>
+        <div class="card-body">
+          <h2>$49 / mo</h2>
+          <p>Unlimited Matches</p>
+          <p>Unlimited Messages</p>
+          <p>Unlimited App Usage</p>
+          <button type="button" class="btn btn-lg btn-block btn-dark">Sign Up</button>
+        </div>
+      </div>
+
+
+      <div class="pricing-column col-lg-4">
+
+        <div class="card-header">
+          <h3>Mastiff</h3>
+        </div>
+        <div class="card-body">
+          <h2>$99 / mo</h2>
+          <p>Pirority Listing</p>
+          <p>Unlimited Matches</p>
+          <p>Unlimited Messages</p>
+          <p>Unlimited App Usage</p>
+          <button type="button" class="btn btn-lg btn-block btn-dark">Sign Up</button>
+
+        </div>
+
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+
+    <h3 class="cta-heading">Find the True Love of Your Dog's Life Today.</h3>
+    <button class="download-button btn btn-lg btn-dark" type="button"><i class="fab fa-apple"></i> Download</button>
+    <button class="download-button btn btn-lg btn-light" type="button"><i class="fab fa-google-play"></i> Download</button>
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+    <i class="social-icon fab fa-facebook-f"></i>
+    <i class="social-icon fab fa-instagram"></i>
+    <i class="social-icon fab fa-twitter"></i>
+    <i class="social-icon fas fa-envelope-square"></i>
+    <p>© Copyright 2018 TinDog</p>
+
+  </footer>
+
+
 </body>
 
 </html>
